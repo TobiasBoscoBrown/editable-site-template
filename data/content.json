@@ -18,12 +18,31 @@
     "wishlist": ""
   },
   "stats": [
-    { "n": "5+", "l": "YEARS DOING THIS" },
-    { "n": "100+", "l": "HAPPY CLIENTS" },
-    { "n": "24h", "l": "REPLY TIME" },
-    { "n": "1", "l": "CITY" }
+    {
+      "n": "5+",
+      "l": "YEARS DOING THIS"
+    },
+    {
+      "n": "100+",
+      "l": "HAPPY CLIENTS"
+    },
+    {
+      "n": "24h",
+      "l": "REPLY TIME"
+    },
+    {
+      "n": "1",
+      "l": "CITY"
+    }
   ],
-  "marquee": ["Quality", "On Time", "Friendly", "Local", "Trusted", "Booking Now"],
+  "marquee": [
+    "Quality",
+    "On Time",
+    "Friendly",
+    "Local",
+    "Trusted",
+    "Booking Now"
+  ],
   "home": {
     "kicker": "YOUR CITY",
     "h1line1": "YOUR",
@@ -48,9 +67,21 @@
       "videoId": "",
       "videoCaption": "",
       "gallery": [
-        { "src": "/media/work_1.jpg", "alt": "Sample of your work", "caption": "SAMPLE ONE" },
-        { "src": "/media/work_2.jpg", "alt": "Sample of your work", "caption": "SAMPLE TWO" },
-        { "src": "/media/work_3.jpg", "alt": "Sample of your work", "caption": "SAMPLE THREE" }
+        {
+          "src": "/media/work_1.jpg",
+          "alt": "Sample of your work",
+          "caption": "SAMPLE ONE"
+        },
+        {
+          "src": "/media/work_2.jpg",
+          "alt": "Sample of your work",
+          "caption": "SAMPLE TWO"
+        },
+        {
+          "src": "/media/work_3.jpg",
+          "alt": "Sample of your work",
+          "caption": "SAMPLE THREE"
+        }
       ],
       "ctaLabel": "WORK WITH ME",
       "blocks": []
@@ -63,9 +94,21 @@
       "videoId": "",
       "videoCaption": "",
       "gallery": [
-        { "src": "/media/press_1.jpg", "alt": "Press or testimonial", "caption": "FEATURE ONE" },
-        { "src": "/media/press_2.jpg", "alt": "Press or testimonial", "caption": "FEATURE TWO" },
-        { "src": "/media/press_3.jpg", "alt": "Press or testimonial", "caption": "FEATURE THREE" }
+        {
+          "src": "/media/press_1.jpg",
+          "alt": "Press or testimonial",
+          "caption": "FEATURE ONE"
+        },
+        {
+          "src": "/media/press_2.jpg",
+          "alt": "Press or testimonial",
+          "caption": "FEATURE TWO"
+        },
+        {
+          "src": "/media/press_3.jpg",
+          "alt": "Press or testimonial",
+          "caption": "FEATURE THREE"
+        }
       ],
       "ctaLabel": "SEE MORE",
       "blocks": []
@@ -78,9 +121,21 @@
       "videoId": "",
       "videoCaption": "",
       "gallery": [
-        { "src": "/media/social_1.jpg", "alt": "Your channel", "caption": "CHANNEL ONE" },
-        { "src": "/media/social_2.jpg", "alt": "Your channel", "caption": "CHANNEL TWO" },
-        { "src": "/media/social_3.jpg", "alt": "Your channel", "caption": "CHANNEL THREE" }
+        {
+          "src": "/media/social_1.jpg",
+          "alt": "Your channel",
+          "caption": "CHANNEL ONE"
+        },
+        {
+          "src": "/media/social_2.jpg",
+          "alt": "Your channel",
+          "caption": "CHANNEL TWO"
+        },
+        {
+          "src": "/media/social_3.jpg",
+          "alt": "Your channel",
+          "caption": "CHANNEL THREE"
+        }
       ],
       "ctaLabel": "FOLLOW ALONG",
       "blocks": []
@@ -95,7 +150,12 @@
         "Write your story here. Who you are, what you do, and what you care about. This is the place to sound like a real person.",
         "Add a second paragraph with a clear invitation: who you want to hear from and how to reach you. Edit all of this from the admin panel."
       ],
-      "pills": ["FRIENDLY", "RELIABLE", "LOCAL", "EXPERIENCED"],
+      "pills": [
+        "FRIENDLY",
+        "RELIABLE",
+        "LOCAL",
+        "EXPERIENCED"
+      ],
       "videoId": "",
       "videoCaption": "",
       "guide": {
@@ -106,7 +166,13 @@
         "ctaLabel": "LEARN MORE",
         "ctaHref": ""
       },
-      "partner": { "code": "", "text_pre": "", "text_rest": "", "ctaLabel": "", "ctaHref": "" },
+      "partner": {
+        "code": "",
+        "text_pre": "",
+        "text_rest": "",
+        "ctaLabel": "",
+        "ctaHref": ""
+      },
       "blocks": []
     },
     "contact": {
@@ -118,5 +184,14 @@
       "blocks": []
     }
   },
-  "promoLinks": []
+  "promoLinks": [],
+  "booking": {
+    "eyebrow": "GET STARTED",
+    "title": "Book / Get in touch",
+    "intro": "Ready to work together? Pick a time or send a quick message and we'll take it from there.",
+    "ctaLabel": "Book now",
+    "url": "",
+    "phone": "",
+    "note": ""
+  }
 }

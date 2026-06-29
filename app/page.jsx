@@ -13,6 +13,7 @@ import PartnerStrip from '@/components/PartnerStrip';
 export default async function Home() {
   const c = await getContent();
   const h = c.home;
+  const b = c.booking || {};
   const pillars = [
     { key: 'content-creation', num: '01' },
     { key: 'modeling', num: '02' },
@@ -84,13 +85,17 @@ export default async function Home() {
 
       <section className="book">
         <div className="wrap">
-          <div className="eyebrow">Always Open</div>
-          <h2 className="display">Let's <span className="accent">collab</span></h2>
-          <p>Brand deals, bookings, shoots or something new. Slide into the DMs or send an email and let's make it.</p>
+          <div className="eyebrow"><Edit path="booking.eyebrow">{b.eyebrow}</Edit></div>
+          <h2 className="display"><Edit path="booking.title">{b.title}</Edit></h2>
+          <p><Edit path="booking.intro">{b.intro}</Edit></p>
           <div className="hero-actions" style={{ justifyContent: 'center' }}>
-            <EmailButton email={c.site.email} subject="Collab / Booking Inquiry" className="btn btn-primary" label={c.site.email} />
-            <a href={c.social.instagram} target="_blank" rel="noopener" className="btn btn-ghost">DM on Instagram</a>
+            {b.url
+              ? <a href={b.url} target="_blank" rel="noopener" className="btn btn-primary">{(b.ctaLabel || 'Book now')} →</a>
+              : <EmailButton email={c.site.email} subject="Booking Inquiry" className="btn btn-primary" label={b.ctaLabel || 'Get in touch'} />}
+            {b.phone ? <a href={`tel:${b.phone}`} className="btn btn-ghost">Call</a> : null}
+            {c.social.instagram ? <a href={c.social.instagram} target="_blank" rel="noopener" className="btn btn-ghost">DM on Instagram</a> : null}
           </div>
+          {b.note ? <p className="book-note"><Edit path="booking.note">{b.note}</Edit></p> : null}
         </div>
       </section>
     </>

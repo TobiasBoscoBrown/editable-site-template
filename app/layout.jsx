@@ -16,7 +16,7 @@ export async function generateMetadata() {
       images: ['/assets/headshot.jpg'],
     },
     twitter: { card: 'summary_large_image' },
-    icons: { icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23161412'/><text x='50' y='72' font-size='64' font-family='Arial' font-weight='900' fill='%2340a3c9' text-anchor='middle'>B</text></svg>" },
+    icons: { icon: `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23161412'/><text x='50' y='72' font-size='64' font-family='Arial' font-weight='900' fill='%2340a3c9' text-anchor='middle'>${(c.site.brand||'').trim().charAt(0).toUpperCase() || 'A'}</text></svg>` },
   };
 }
 

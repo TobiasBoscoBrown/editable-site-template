@@ -12,6 +12,7 @@ export async function generateMetadata() {
 export default async function Contact() {
   const c = await getContent();
   const p = c.pages.contact;
+  const b = c.booking || {};
   const s = c.social;
   const links = [
     { label: 'Instagram', href: s.instagram }, { label: 'TikTok', href: s.tiktok },
@@ -30,8 +31,10 @@ export default async function Contact() {
           <h1 className="display"><Edit path="pages.contact.title">{p.title}</Edit></h1>
           <p className="lead"><Edit path="pages.contact.intro">{p.intro}</Edit></p>
           <div className="hero-actions" style={{ marginTop: 30 }}>
-            <EmailButton email={c.site.email} subject="Collab / Booking Inquiry" className="btn btn-primary" label={c.site.email} />
-            <a href={s.instagram} target="_blank" rel="noopener" className="btn btn-ghost">DM on Instagram</a>
+            {b.url ? <a href={b.url} target="_blank" rel="noopener" className="btn btn-primary">{(b.ctaLabel || 'Book now')} →</a> : null}
+            <EmailButton email={c.site.email} subject="Booking Inquiry" className="btn btn-primary" label={c.site.email} />
+            {b.phone ? <a href={`tel:${b.phone}`} className="btn btn-ghost">Call</a> : null}
+            {s.instagram ? <a href={s.instagram} target="_blank" rel="noopener" className="btn btn-ghost">DM on Instagram</a> : null}
           </div>
         </div>
       </section>
